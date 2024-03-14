@@ -1,0 +1,84 @@
+Model: "sequential_1"
+____________________________________________________________________________________________________
+ Layer (type)                                Output Shape                            Param #        
+====================================================================================================
+ conv2d (Conv2D)                             (None, 248, 248, 32)                    896            
+                                                                                                    
+ batch_normalization (BatchNormalization)    (None, 248, 248, 32)                    128            
+                                                                                                    
+ max_pooling2d (MaxPooling2D)                (None, 124, 124, 32)                    0              
+                                                                                                    
+ conv2d_1 (Conv2D)                           (None, 122, 122, 64)                    18496          
+                                                                                                    
+ batch_normalization_1 (BatchNormalization)  (None, 122, 122, 64)                    256            
+                                                                                                    
+ max_pooling2d_1 (MaxPooling2D)              (None, 61, 61, 64)                      0              
+                                                                                                    
+ flatten (Flatten)                           (None, 238144)                          0              
+                                                                                                    
+ dense (Dense)                               (None, 128)                             30482560       
+                                                                                                    
+ batch_normalization_2 (BatchNormalization)  (None, 128)                             512            
+                                                                                                    
+ dropout (Dropout)                           (None, 128)                             0              
+                                                                                                    
+ dense_1 (Dense)                             (None, 5)                               645            
+                                                                                                    
+====================================================================================================
+Total params: 30,503,493
+Trainable params: 30,503,045
+Non-trainable params: 448
+____________________________________________________________________________________________________
+Epochs: 20
+Accuracy: 0.7613908648490906% | Loss: 1.026583194732666
+
+Layer 0 config: {'name': 'conv2d', 'trainable': True, 'dtype': 'float32', 'batch_input_shape': (None, 250, 250, 3), 'filters': 32, 'kernel_size': (3, 3), 'strides': (1, 1), 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': (1, 1), 'groups': 1, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}
+Layer 1 config: {'name': 'batch_normalization', 'trainable': True, 'dtype': 'float32', 'axis': ListWrapper([3]), 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None}
+Layer 2 config: {'name': 'max_pooling2d', 'trainable': True, 'dtype': 'float32', 'pool_size': (2, 2), 'padding': 'valid', 'strides': (2, 2), 'data_format': 'channels_last'}
+Layer 3 config: {'name': 'conv2d_1', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3, 3), 'strides': (1, 1), 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': (1, 1), 'groups': 1, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}
+Layer 4 config: {'name': 'batch_normalization_1', 'trainable': True, 'dtype': 'float32', 'axis': ListWrapper([3]), 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None}
+Layer 5 config: {'name': 'max_pooling2d_1', 'trainable': True, 'dtype': 'float32', 'pool_size': (2, 2), 'padding': 'valid', 'strides': (2, 2), 'data_format': 'channels_last'}
+Layer 6 config: {'name': 'flatten', 'trainable': True, 'dtype': 'float32', 'data_format': 'channels_last'}
+
+Model: "sequential_1"
+____________________________________________________________________________________________________
+ Layer (type)                                Output Shape                            Param #        
+====================================================================================================
+ conv2d (Conv2D)                             (None, 248, 248, 32)                    896            
+                                                                                                    
+ batch_normalization (BatchNormalization)    (None, 248, 248, 32)                    128            
+                                                                                                    
+ max_pooling2d (MaxPooling2D)                (None, 124, 124, 32)                    0              
+                                                                                                    
+ conv2d_1 (Conv2D)                           (None, 122, 122, 64)                    18496          
+                                                                                                    
+ batch_normalization_1 (BatchNormalization)  (None, 122, 122, 64)                    256            
+                                                                                                    
+ max_pooling2d_1 (MaxPooling2D)              (None, 61, 61, 64)                      0              
+                                                                                                    
+ flatten (Flatten)                           (None, 238144)                          0              
+                                                                                                    
+ dense (Dense)                               (None, 128)                             30482560       
+                                                                                                    
+ batch_normalization_2 (BatchNormalization)  (None, 128)                             512            
+                                                                                                    
+ dropout (Dropout)                           (None, 128)                             0              
+                                                                                                    
+ dense_1 (Dense)                             (None, 5)                               645            
+                                                                                                    
+====================================================================================================
+Total params: 30,503,493
+Trainable params: 30,503,045
+Non-trainable params: 448
+____________________________________________________________________________________________________
+Epochs: 10
+Accuracy: 0.6620428562164307% | Loss: 1.1486810445785522
+
+Layer 0 config: {'name': 'conv2d', 'trainable': True, 'dtype': 'float32', 'batch_input_shape': (None, 250, 250, 3), 'filters': 32, 'kernel_size': (3, 3), 'strides': (1, 1), 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': (1, 1), 'groups': 1, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}
+Layer 1 config: {'name': 'batch_normalization', 'trainable': True, 'dtype': 'float32', 'axis': ListWrapper([3]), 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None}
+Layer 2 config: {'name': 'max_pooling2d', 'trainable': True, 'dtype': 'float32', 'pool_size': (2, 2), 'padding': 'valid', 'strides': (2, 2), 'data_format': 'channels_last'}
+Layer 3 config: {'name': 'conv2d_1', 'trainable': True, 'dtype': 'float32', 'filters': 64, 'kernel_size': (3, 3), 'strides': (1, 1), 'padding': 'valid', 'data_format': 'channels_last', 'dilation_rate': (1, 1), 'groups': 1, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}
+Layer 4 config: {'name': 'batch_normalization_1', 'trainable': True, 'dtype': 'float32', 'axis': ListWrapper([3]), 'momentum': 0.99, 'epsilon': 0.001, 'center': True, 'scale': True, 'beta_initializer': {'class_name': 'Zeros', 'config': {}}, 'gamma_initializer': {'class_name': 'Ones', 'config': {}}, 'moving_mean_initializer': {'class_name': 'Zeros', 'config': {}}, 'moving_variance_initializer': {'class_name': 'Ones', 'config': {}}, 'beta_regularizer': None, 'gamma_regularizer': None, 'beta_constraint': None, 'gamma_constraint': None}
+Layer 5 config: {'name': 'max_pooling2d_1', 'trainable': True, 'dtype': 'float32', 'pool_size': (2, 2), 'padding': 'valid', 'strides': (2, 2), 'data_format': 'channels_last'}
+Layer 6 config: {'name': 'flatten', 'trainable': True, 'dtype': 'float32', 'data_format': 'channels_last'}
+
